@@ -66,5 +66,18 @@ P07-P08,CBU,-His,1,N4,8-15-2018,EL
 to properly begin analysis cd into the directory with your BFG reads and copy this directory like so: 
 
 
+If your barcodes were generated through RCP-PCR analysis you will likely have a file with barcode sequence, gene identity and plate position. This can be used with the python code barcode_csv_maker.py to generate a barcode.csv file.  
+The input file should have the following columns (X implies unimportant):
+X,X,LPG,X,BC1,X,BC2,X,X,PLATE(i.e.AD_PLAT_1),WELL (i.e. B09),
+
+
+
+With a successfully created barcodes.csv file, the barcodes.fasta file can also be generated using the barcode_fasta_maker.py script which takes the barcodes.csv file as an input.
+
+These files come pre-generated for the BFG V2 platinum set in this repository.
+
+
+
+
 git clone 
 

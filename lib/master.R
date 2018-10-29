@@ -34,7 +34,7 @@ debug.mode <- as.logical(getArg("debug",default=FALSE))
 
 # This option determines how many jobs will be submitted to the cluster at maximum.
 # When more jobs are available, they get buffered internally until enough room exists in the queue.
-max.queue <- as.numeric(getArg("maxQueue",default=60))
+max.queue <- as.numeric(getArg("maxQueue",default=200))
 
 # This file contains information about the barcodes. Example:
 # /home/nyachie/proj/cresample2/Data/db/CNT_Ver1/csv/MainDB.CNT_Ver1_08162012.csv

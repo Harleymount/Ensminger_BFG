@@ -5,11 +5,11 @@ new.yogi.plotter <- function() {
 	###
 	# this function draws a heatmap. 
 	#
-	heatmap <- function(data,cex=.5,color.stops=c("white","black"),
+	heatmap <- function(data,cex=.5,color.stops=c("white","royalblue3"),
 		row.names=rownames(data),col.names=colnames(data),log=FALSE,
 		col.separator=NULL, row.separator=NULL) {
 		#define the number of colors to use
-		ncolors <- 10
+		ncolors <- 30
 
 		#create color palette
 		colors <- colorRampPalette(color.stops)(ncolors)

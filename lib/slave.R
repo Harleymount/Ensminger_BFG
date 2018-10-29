@@ -96,7 +96,7 @@ process.reads <- function(read.file, direction) {
 		"-strand plus",
 		"-db",barcode.fa,
 		"-outfmt 10",
-		"-evalue 1e-8",
+		"-evalue 1e-3",
 		"-query",read.file
 	),open="r")
 	#read BLAST output from stdout stream
